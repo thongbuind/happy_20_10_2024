@@ -1,7 +1,7 @@
 // Fake database
 var db = [
     [
-        'param 1 của mẹ nè', 
+        'param 1 của mẹ nè param 1 của mẹ nè param 1 của mẹ nè param 1 của mẹ nè param 1 của mẹ nè param 1 của mẹ nè', 
         'param 2 của mẹ nè',
         'param 3 của mẹ nè',
         'param 4 của mẹ nè',
@@ -17,7 +17,7 @@ var db = [
         'param 14 của mẹ nè'
     ], 
     [
-        'param 1 của chị nè', 
+        '<p>Hế lô bro, this is a mini project I made in one night, which includes 300 lines of code (It’s just short, haha).</p> <img src="assets/pic3.png" alt="A description of the example image" width="270" height="170">', 
         'param 2 của chị nè',
         'param 3 của chị nè',
         'param 4 của chị nè',
@@ -108,7 +108,7 @@ function setDot() {
 
 function setText() {
     let textHTML = `
-        <p>${db[userID][statusPage]}</p>
+        ${db[userID][statusPage]}
     `;
     document.getElementById('text').innerHTML = textHTML;
 }
