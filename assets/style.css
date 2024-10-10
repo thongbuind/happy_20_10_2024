@@ -72,7 +72,7 @@ input::placeholder {
 #container {
     display: none;
     background-color: #8B0000;
-    width: 90vw;
+    width: 75vw;
     height: 50vh;
     position: relative;
     border-radius: 20px;
