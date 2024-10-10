@@ -4,13 +4,28 @@ var db = [
         'param 1 của mẹ nè', 
         'param 2 của mẹ nè',
         'param 3 của mẹ nè',
-        'param 4 của mẹ nè'
+        'param 4 của mẹ nè',
+        'param 5 của mẹ nè',
+        'param 6 của mẹ nè',
+        'param 7 của mẹ nè',
+        'param 8 của mẹ nè',
+        'param 9 của mẹ nè',
+        'param 10 của mẹ nè',
+        'param 11 của mẹ nè',
+        'param 12 của mẹ nè',
+        'param 13 của mẹ nè',
+        'param 14 của mẹ nè'
     ], 
     [
         'param 1 của chị nè', 
         'param 2 của chị nè',
         'param 3 của chị nè',
-        'param 4 của chị nè'
+        'param 4 của chị nè',
+        'param 5 của chị nè',
+        'param 6 của chị nè',
+        'param 7 của chị nè',
+        'param 8 của chị nè',
+        'param 9 của chị nè'
     ]
 ];
 
@@ -18,6 +33,8 @@ var db = [
 var userID = 0;
 var user = '';
 var color = '';
+var statusPage = 0;
+var sumPage = db[userID].length;
 document.getElementById('modal-sign-in').onclick = function(e) {
     e.preventDefault();
     user = document.getElementById("modal-input-name").value.toLowerCase();
@@ -27,6 +44,7 @@ document.getElementById('modal-sign-in').onclick = function(e) {
     ) {
         userID = 0;
         color = '#8B0000';
+        sumPage = db[userID].length;
         document.getElementsByClassName('modal')[0].style.display = 'none';
         document.getElementsByClassName('modal')[0].style.position = '';
         document.getElementById('container').style.display = 'block';
@@ -40,6 +58,7 @@ document.getElementById('modal-sign-in').onclick = function(e) {
     ) {
         userID = 1;
         color = '#00cec9';
+        sumPage = db[userID].length;
         document.getElementsByClassName('modal')[0].style.display = 'none';
         document.getElementsByClassName('modal')[0].style.position = '';
         document.getElementById('container').style.display = 'block';
@@ -51,10 +70,7 @@ document.getElementById('modal-sign-in').onclick = function(e) {
     } else {
         document.getElementById("modal-noti").style.display = "block";
     }
-
 }
-var statusPage = 0;
-var sumPage = db[userID].length;
 
 // set onclick cho nut sang phai;
 document.getElementById('triangle-right').onclick = function(e) {
